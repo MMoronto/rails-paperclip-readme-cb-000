@@ -722,3 +722,14 @@ Command :: convert '/tmp/cb3b87629c18dbb3ed2f83154ce8b6ce20201210-12117-1scxd77.
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
   [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "authors" SET "avatar_updated_at" = ?, "updated_at" = ?, "avatar_file_name" = ? WHERE "authors"."id" = ?[0m  [["avatar_updated_at", "2020-12-10 22:08:53.407953"], ["updated_at", "2020-12-10 22:08:53.830169"], ["avatar_file_name", "1492499_10152815542941645_6673405770903367650_o.jpg"], ["id", 11]]
   [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/authors" for 76.124.168.60 at 2020-12-10 22:09:20 +0000
+Cannot render console from 76.124.168.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from block (3 levels) in <class:Railtie> at /usr/local/rvm/gems/ruby-2.6.1/gems/activerecord-5.0.7.2/lib/active_record/railtie.rb:113)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  Rendered authors/index.html.erb within layouts/application (224.3ms)
+Completed 200 OK in 255ms (Views: 241.4ms | ActiveRecord: 0.8ms)
+
+
